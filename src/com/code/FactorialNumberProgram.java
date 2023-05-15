@@ -1,15 +1,19 @@
 package com.code;
 
+import java.util.Scanner;
+
 public class FactorialNumberProgram {
 
 	public static void main(String[] args) {
 		
-		int num = 5;
-		int factorialNum = getFactorialNum(num);
-		System.out.println("For given number "+num +"factorial is ="+factorialNum);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter number :");
+		int num = sc.nextInt();
+		long factorialNum = getFactorialNum(num);
+		System.out.println("For given number "+num +"factorial is = "+factorialNum);
 	}
 
-	private static int getFactorialNum(int num) {
+	private static long getFactorialNum(int num) {
 		
 		int factorial = 1;
 		
